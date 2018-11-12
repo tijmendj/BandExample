@@ -24,7 +24,7 @@ public class BandMember {
 		}
 		// Wait one measure before we start playing
 		try {
-			Thread.sleep(1 / ((song.getTempo() / 60)) * 1000);
+			Thread.sleep(4 / ((song.getTempo() / 60)) * 1000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
