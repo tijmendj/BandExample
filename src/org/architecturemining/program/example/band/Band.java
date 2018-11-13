@@ -20,8 +20,12 @@ public class Band {
 	public void practice() {
 		for (Song song : knownSongs) {
 			System.out.println("Next song: " + song.getName());
-			for (BandMember bandmember : members) {
-				bandmember.play(song);
+			BandMember[] ma = new BandMember[members.size()];
+			ma = members.toArray(ma);
+			// We use a classic for loop instead of a for each/iterator
+			// to demonstrate the difference in the call graph
+			for (int i = 0; i < ma.length; i++) {
+				ma[i].play(song);
 			}
 		}
 	}
