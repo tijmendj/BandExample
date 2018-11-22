@@ -10,7 +10,6 @@ public class Song {
 	 * @param music
 	 */
 	public Song(int tempo, String name) {
-		super();
 		this.tempo = tempo;
 		this.name = name;
 	}

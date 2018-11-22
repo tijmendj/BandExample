@@ -6,7 +6,7 @@ public class Vocals implements Instrument {
 
 	@Override
 	public void makeMusic(Song song) {
-		System.out.println("Dun dun dun dududun dun"); // They're under pressure
+		System.out.println(song.getLyrics());
 	}
 
 }
